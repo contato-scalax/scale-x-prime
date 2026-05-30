@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ScalaxBird } from "./ScalaxBird";
-import { Particles } from "./Particles";
+import { ScalaxBird } from "../ScalaxBird";
+import { Particles } from "../Particles";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 export function Hero() {
