@@ -4,6 +4,7 @@ import { LoadingScreen } from "@/components/LoadingScreen";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Results } from "@/components/sections/Results";
+import { Projects } from "@/components/sections/Projects";
 import { PaidTraffic } from "@/components/sections/PaidTraffic";
 import { Process } from "@/components/sections/Process";
 import { Cases } from "@/components/sections/Cases";
@@ -41,6 +42,7 @@ function Index() {
       <main className="relative">
         <Hero />
         <Results />
+        <Projects />
         <PaidTraffic />
         <Process />
         <Cases />
