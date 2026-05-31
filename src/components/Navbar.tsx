@@ -12,15 +12,15 @@ const links = [
 ];
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 80], [0, 1]);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 30);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    return scrollY.on("change", (latest) => {
+      setScrolled(latest > 30);
+    });
+  }, [scrollY]);
 
   return (
     <AnimatePresence>
