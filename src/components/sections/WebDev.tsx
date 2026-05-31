@@ -1,4 +1,5 @@
 import { Reveal } from "../Reveal";
+import { memo } from "react";
 import { 
   Layout, 
   Rocket, 
@@ -89,9 +90,9 @@ const differentiators = [
   }
 ];
 
-export function WebDev() {
+export const WebDev = memo(() => {
   return (
-    <section id="sites" className="relative overflow-hidden py-32 bg-scalax-ink">
+    <section id="sites" className="relative overflow-hidden py-32 bg-scalax-ink" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 1200px' }}>
       {/* Background patterns */}
       <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none" />
       <div className="absolute top-0 left-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-scalax-blue/10 blur-[120px] pointer-events-none" />
@@ -199,4 +200,6 @@ export function WebDev() {
       </div>
     </section>
   );
-}
+});
+
+WebDev.displayName = "WebDev";

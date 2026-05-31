@@ -1,5 +1,6 @@
 import { Counter } from "../Counter";
 import { Reveal } from "../Reveal";
+import { memo } from "react";
 
 const stats = [
   { label: "Custo por Conversa", prefix: "R$ ", to: 1.20, decimals: 2 },
@@ -9,9 +10,9 @@ const stats = [
   { label: "Investimento Total", prefix: "R$ ", to: 267.91, decimals: 2 },
 ];
 
-export function Results() {
+export const Results = memo(() => {
   return (
-    <section id="resultados" className="relative overflow-hidden py-32">
+    <section id="resultados" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
       <div className="absolute inset-0 bg-grid opacity-20" />
       <div
         className="absolute inset-0"
@@ -65,4 +66,6 @@ export function Results() {
       </div>
     </section>
   );
-}
+});
+
+Results.displayName = "Results";

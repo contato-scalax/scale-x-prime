@@ -10,14 +10,14 @@ export function Hero() {
       <Particles count={50} />
 
       {/* Orbital glow rings */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2">
-        <div className="absolute inset-0 rounded-full border border-scalax-neon/10 animate-pulse-glow" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 will-change-transform">
+        <div className="absolute inset-0 rounded-full border border-scalax-neon/10 animate-pulse-glow will-change-[opacity,filter]" />
         <div
-          className="absolute inset-10 rounded-full border border-scalax-neon/5 animate-pulse-glow"
+          className="absolute inset-10 rounded-full border border-scalax-neon/5 animate-pulse-glow will-change-[opacity,filter]"
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute inset-24 rounded-full border border-scalax-neon/10 animate-pulse-glow"
+          className="absolute inset-24 rounded-full border border-scalax-neon/10 animate-pulse-glow will-change-[opacity,filter]"
           style={{ animationDelay: "2s" }}
         />
       </div>
@@ -97,12 +97,14 @@ export function Hero() {
           />
           <motion.div
             animate={{ rotateY: [0, 360] }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+            style={{ willChange: "transform" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="absolute inset-8 rounded-full border border-scalax-neon/20"
           />
           <motion.div
             animate={{ rotateZ: [0, -360] }}
-            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+            style={{ willChange: "transform" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="absolute inset-16 rounded-full border border-scalax-neon/10"
           />
 
@@ -113,28 +115,28 @@ export function Hero() {
             }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             className="absolute inset-0 flex items-center justify-center"
-            style={{ filter: "drop-shadow(0 30px 60px oklch(0.55 0.22 255 / 0.6))" }}
+            style={{ filter: "drop-shadow(0 30px 60px oklch(0.55 0.22 255 / 0.6))", willChange: "transform" }}
           >
-            <ScalaxBird className="h-3/4 w-3/4" />
+            <ScalaxBird className="h-3/4 w-3/4" priority="high" />
           </motion.div>
 
           {/* Orbiting particles */}
-          {[0, 1, 2, 3].map((i) => (
+          {[0, 1, 2].map((i) => (
             <motion.div
               key={i}
-              className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-scalax-neon"
-              style={{ boxShadow: "0 0 20px oklch(0.78 0.18 235)" }}
+              className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-scalax-neon will-change-transform"
+              style={{ boxShadow: "0 0 15px oklch(0.78 0.18 235)" }}
               animate={{
                 x: [
-                  Math.cos((i * Math.PI) / 2) * 200,
-                  Math.cos((i * Math.PI) / 2 + Math.PI * 2) * 200,
+                  Math.cos((i * Math.PI) / 1.5) * 180,
+                  Math.cos((i * Math.PI) / 1.5 + Math.PI * 2) * 180,
                 ],
                 y: [
-                  Math.sin((i * Math.PI) / 2) * 200,
-                  Math.sin((i * Math.PI) / 2 + Math.PI * 2) * 200,
+                  Math.sin((i * Math.PI) / 1.5) * 180,
+                  Math.sin((i * Math.PI) / 1.5 + Math.PI * 2) * 180,
                 ],
               }}
-              transition={{ duration: 8 + i * 2, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 10 + i * 3, repeat: Infinity, ease: "linear" }}
             />
           ))}
         </motion.div>

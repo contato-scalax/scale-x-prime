@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Reveal } from "../Reveal";
 
 const steps = [
@@ -9,9 +10,9 @@ const steps = [
   { n: "06", title: "Escala", text: "Aumento de orçamento controlado, novos canais e expansão geográfica." },
 ];
 
-export function Process() {
+export const Process = memo(() => {
   return (
-    <section id="processo" className="relative overflow-hidden py-32">
+    <section id="processo" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 800px' }}>
       <div
         className="absolute inset-0"
         style={{
@@ -73,4 +74,6 @@ export function Process() {
       </div>
     </section>
   );
-}
+});
+
+Process.displayName = "Process";

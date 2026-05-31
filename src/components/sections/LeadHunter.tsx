@@ -1,10 +1,11 @@
 import { Reveal } from "../Reveal";
 import { motion } from "framer-motion";
 import { Crosshair, Filter, Layers } from "lucide-react";
+import { memo } from "react";
 
-export function LeadHunter() {
+export const LeadHunter = memo(() => {
   return (
-    <section id="leadhunter" className="relative overflow-hidden py-32">
+    <section id="leadhunter" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 600px' }}>
       <div
         className="absolute inset-0"
         style={{
@@ -50,7 +51,9 @@ export function LeadHunter() {
       </div>
     </section>
   );
-}
+});
+
+LeadHunter.displayName = "LeadHunter";
 
 function LeadMockup() {
   const leads = [
