@@ -44,6 +44,7 @@ function Index() {
         <Hero />
         <Results />
         <Projects />
+        <WebDev />
         <PaidTraffic />
         <Process />
         <Cases />
