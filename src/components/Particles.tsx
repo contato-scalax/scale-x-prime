@@ -27,14 +27,14 @@ export function Particles({ count = 40, className }: Props) {
       {particles.map((p) => (
         <span
           key={p.id}
-          className="absolute rounded-full bg-scalax-neon"
+          className="absolute rounded-full bg-scalax-neon will-change-transform"
           style={{
             left: `${p.left}%`,
             bottom: `-10px`,
             width: `${p.size}px`,
             height: `${p.size}px`,
             opacity: p.opacity,
-            boxShadow: `0 0 ${p.size * 4}px oklch(0.78 0.18 235 / 0.8)`,
+            boxShadow: p.size > 2 ? `0 0 ${p.size * 3}px oklch(0.78 0.18 235 / 0.6)` : 'none',
             animation: `particle-rise ${p.duration}s linear ${p.delay}s infinite`,
           }}
         />
