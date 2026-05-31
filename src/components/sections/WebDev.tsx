@@ -108,10 +108,10 @@ export function WebDev() {
               Não criamos páginas. <br />
               <span className="text-gradient">Construímos ativos digitais.</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-scalax-neon font-medium leading-relaxed mb-6">
               Não criamos páginas. Construímos ativos digitais que trabalham por você 24 horas por dia.
             </p>
-            <p className="mt-6 text-lg text-muted-foreground/80 leading-relaxed max-w-2xl">
+            <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl">
               Seu site não deve ser apenas bonito. Ele deve transmitir confiança, gerar autoridade, 
               captar oportunidades e transformar visitantes em clientes. Cada projeto desenvolvido 
               pela ScalaX é pensado para unir design, performance, experiência do usuário e conversão.
