@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { memo } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "../Reveal";
 import lelumaImg from "@/assets/project-leluma.jpeg";
@@ -33,11 +34,11 @@ const projects: Project[] = [
   },
 ];
 
-export function Projects() {
+export const Projects = memo(() => {
   const reduce = useReducedMotion();
 
   return (
-    <section id="projetos" className="relative overflow-hidden py-32">
+    <section id="projetos" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 800px' }}>
       <div
         className="absolute inset-0"
         style={{
@@ -132,4 +133,6 @@ export function Projects() {
       </div>
     </section>
   );
-}
+});
+
+Projects.displayName = "Projects";

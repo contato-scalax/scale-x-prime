@@ -121,22 +121,22 @@ export function Hero() {
           </motion.div>
 
           {/* Orbiting particles */}
-          {[0, 1, 2, 3].map((i) => (
+          {[0, 1, 2].map((i) => (
             <motion.div
               key={i}
-              className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-scalax-neon"
-              style={{ boxShadow: "0 0 20px oklch(0.78 0.18 235)" }}
+              className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-scalax-neon will-change-transform"
+              style={{ boxShadow: "0 0 15px oklch(0.78 0.18 235)" }}
               animate={{
                 x: [
-                  Math.cos((i * Math.PI) / 2) * 200,
-                  Math.cos((i * Math.PI) / 2 + Math.PI * 2) * 200,
+                  Math.cos((i * Math.PI) / 1.5) * 180,
+                  Math.cos((i * Math.PI) / 1.5 + Math.PI * 2) * 180,
                 ],
                 y: [
-                  Math.sin((i * Math.PI) / 2) * 200,
-                  Math.sin((i * Math.PI) / 2 + Math.PI * 2) * 200,
+                  Math.sin((i * Math.PI) / 1.5) * 180,
+                  Math.sin((i * Math.PI) / 1.5 + Math.PI * 2) * 180,
                 ],
               }}
-              transition={{ duration: 8 + i * 2, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 10 + i * 3, repeat: Infinity, ease: "linear" }}
             />
           ))}
         </motion.div>

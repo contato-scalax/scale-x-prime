@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { useState, memo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { Reveal } from "../Reveal";
@@ -17,7 +17,7 @@ interface CaseRow {
   image_url: string | null;
 }
 
-export function Cases() {
+export const Cases = memo(() => {
   const [active, setActive] = useState<CaseRow | null>(null);
 
   const { data, isLoading } = useQuery({
@@ -33,7 +33,7 @@ export function Cases() {
   });
 
   return (
-    <section id="cases" className="relative overflow-hidden py-32">
+    <section id="cases" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 600px' }}>
       <div className="absolute inset-0 bg-grid opacity-20" />
       <div className="container relative z-10 mx-auto px-6">
         <Reveal className="mx-auto mb-20 max-w-2xl text-center">
@@ -159,4 +159,6 @@ function ModalStat({ label, value }: { label: string; value: string }) {
       <div className="mt-1 text-base font-bold text-neon">{value}</div>
     </div>
   );
-}
+});
+
+Cases.displayName = "Cases";
