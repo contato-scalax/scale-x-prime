@@ -138,7 +138,9 @@ export const Cases = memo(() => {
       </AnimatePresence>
     </section>
   );
-}
+});
+
+Cases.displayName = "Cases";
 
 function Metric({ icon: Icon, label, value }: { icon: typeof TrendingUp; label: string; value: string }) {
   return (
@@ -159,6 +161,4 @@ function ModalStat({ label, value }: { label: string; value: string }) {
       <div className="mt-1 text-base font-bold text-neon">{value}</div>
     </div>
   );
-});
-
-Cases.displayName = "Cases";
+}
