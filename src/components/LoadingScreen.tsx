@@ -76,7 +76,7 @@ export function LoadingScreen({ onComplete }: Props) {
                   delay: p.delay,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-scalax-neon"
+                className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-scalax-neon will-change-transform"
                 style={{
                   boxShadow:
                     "0 0 12px oklch(0.78 0.18 235), 0 0 24px oklch(0.78 0.18 235 / 0.6)",
