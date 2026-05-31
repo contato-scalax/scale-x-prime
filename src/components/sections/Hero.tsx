@@ -115,9 +115,9 @@ export function Hero() {
             }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             className="absolute inset-0 flex items-center justify-center"
-            style={{ filter: "drop-shadow(0 30px 60px oklch(0.55 0.22 255 / 0.6))" }}
+            style={{ filter: "drop-shadow(0 30px 60px oklch(0.55 0.22 255 / 0.6))", willChange: "transform" }}
           >
-            <ScalaxBird className="h-3/4 w-3/4" />
+            <ScalaxBird className="h-3/4 w-3/4" priority="high" />
           </motion.div>
 
           {/* Orbiting particles */}
