@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { Link } from "@tanstack/react-router";
 import { ScalaxBird } from "./ScalaxBird";
 
 const links = [
-  { label: "Resultados", href: "/#resultados" },
-  { label: "Tráfego", href: "/#trafego" },
-  { label: "Processo", href: "/#processo" },
-  { label: "Cases", href: "/#cases" },
-  { label: "Sites", href: "/sites", internal: true as const },
-  { label: "Produtos", href: "/#analytics" },
+  { label: "Resultados", href: "#resultados" },
+  { label: "Tráfego", href: "#trafego" },
+  { label: "Processo", href: "#processo" },
+  { label: "Cases", href: "#cases" },
+  { label: "Produtos", href: "#analytics" },
 ];
 
 export function Navbar() {
@@ -42,25 +40,15 @@ export function Navbar() {
           </a>
 
           <div className="hidden items-center gap-7 md:flex">
-            {links.map((l) =>
-              "internal" in l ? (
-                <Link
-                  key={l.label}
-                  to={l.href}
-                  className="text-xs uppercase tracking-widest text-scalax-neon transition-colors hover:text-foreground"
-                >
-                  {l.label}
-                </Link>
-              ) : (
-                <a
-                  key={l.label}
-                  href={l.href}
-                  className="text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {l.label}
-                </a>
-              )
-            )}
+            {links.map((l) => (
+              <a
+                key={l.label}
+                href={l.href}
+                className="text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {l.label}
+              </a>
+            ))}
           </div>
 
           <a
