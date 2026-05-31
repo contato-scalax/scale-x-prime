@@ -4,6 +4,7 @@ import { ScalaxBird } from "./ScalaxBird";
 
 const links = [
   { label: "Resultados", href: "#resultados" },
+  { label: "Sites", href: "#sites" },
   { label: "Tráfego", href: "#trafego" },
   { label: "Processo", href: "#processo" },
   { label: "Cases", href: "#cases" },
