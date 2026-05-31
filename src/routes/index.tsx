@@ -29,6 +29,8 @@ export const Route = createFileRoute("/")({
         content:
           "Transformamos investimentos em crescimento previsível através de tráfego pago, automação e inteligência de campanhas.",
       },
+      { property: "og:image", content: "/scalax-social.png" },
+      { name: "twitter:image", content: "/scalax-social.png" },
     ],
   }),
   component: Index,

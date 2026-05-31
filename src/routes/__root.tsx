@@ -87,10 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
       { name: "twitter:description", content: "ScalaX Ascend is a premium, cinematic website experience showcasing data-driven growth strategies." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6807906e-c702-4351-a01f-f81f73b38252/id-preview-33a6ca11--8167ec34-d3c6-4bca-881e-c62c8d2b885b.lovable.app-1780117653895.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6807906e-c702-4351-a01f-f81f73b38252/id-preview-33a6ca11--8167ec34-d3c6-4bca-881e-c62c8d2b885b.lovable.app-1780117653895.png" },
+      { property: "og:image", content: "/scalax-social.png" },
+      { name: "twitter:image", content: "/scalax-social.png" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: "/scalax-favicon.png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       {
         rel: "stylesheet",
         href: appCss,
