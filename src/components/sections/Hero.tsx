@@ -63,7 +63,7 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
-              href="#cases"
+              href="#projetos"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
               style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-glow)" }}
             >
