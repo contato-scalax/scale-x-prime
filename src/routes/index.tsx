@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Results } from "@/components/sections/Results";
 import { Projects } from "@/components/sections/Projects";
+import { WebDev } from "@/components/sections/WebDev";
 import { PaidTraffic } from "@/components/sections/PaidTraffic";
 import { Process } from "@/components/sections/Process";
 import { Cases } from "@/components/sections/Cases";
@@ -43,6 +44,7 @@ function Index() {
         <Hero />
         <Results />
         <Projects />
+        <WebDev />
         <PaidTraffic />
         <Process />
         <Cases />
