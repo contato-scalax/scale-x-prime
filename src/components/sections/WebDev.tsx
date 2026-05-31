@@ -105,16 +105,14 @@ export function WebDev() {
               Criação de Sites
             </div>
             <h2 className="text-balance text-4xl font-bold leading-tight md:text-6xl mb-6">
-              Não criamos páginas. <br />
-              <span className="text-gradient">Construímos ativos digitais.</span>
+              Mais que um site. <br />
+              <span className="text-gradient">Transformando visitantes em clientes.</span>
             </h2>
             <p className="text-xl text-scalax-neon font-medium leading-relaxed mb-6">
-              Não criamos páginas. Construímos ativos digitais que trabalham por você 24 horas por dia.
+              Criamos sites, landing pages e sistemas modernos que unem design, performance e estratégia para transformar acessos em oportunidades reais de negócio.
             </p>
             <p className="text-lg text-muted-foreground/80 leading-relaxed max-w-2xl">
-              Seu site não deve ser apenas bonito. Ele deve transmitir confiança, gerar autoridade, 
-              captar oportunidades e transformar visitantes em clientes. Cada projeto desenvolvido 
-              pela ScalaX é pensado para unir design, performance, experiência do usuário e conversão.
+              Cada projeto é desenvolvido para transmitir autoridade, gerar confiança, fortalecer marcas e preparar empresas para crescer de forma escalável.
             </p>
           </Reveal>
         </div>
