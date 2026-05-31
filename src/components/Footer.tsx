@@ -64,10 +64,10 @@ export function Footer() {
             <ul className="mt-4 space-y-4 text-sm">
               <li>
                 <a
-                  href="mailto:contato@scalax.com.br"
+                  href="mailto:contato.scalax@gmail.com"
                   className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Mail className="h-3.5 w-3.5" /> contato@scalax.com.br
+                  <Mail className="h-3.5 w-3.5" /> contato.scalax@gmail.com
                 </a>
               </li>
               <li>
