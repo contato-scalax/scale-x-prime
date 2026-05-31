@@ -1,5 +1,6 @@
 import { Reveal } from "../Reveal";
 import { Target, Zap, LineChart, BrainCircuit } from "lucide-react";
+import { memo } from "react";
 
 const items = [
   {
@@ -24,9 +25,9 @@ const items = [
   },
 ];
 
-export function PaidTraffic() {
+export const PaidTraffic = memo(() => {
   return (
-    <section id="trafego" className="relative overflow-hidden py-32">
+    <section id="trafego" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 600px' }}>
       <div className="container relative z-10 mx-auto px-6">
         <div className="grid gap-16 lg:grid-cols-[1fr_1.2fr] lg:items-center">
           <Reveal>
@@ -94,4 +95,6 @@ export function PaidTraffic() {
       </div>
     </section>
   );
-}
+});
+
+PaidTraffic.displayName = "PaidTraffic";

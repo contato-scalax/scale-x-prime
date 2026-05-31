@@ -1,10 +1,11 @@
 import { Reveal } from "../Reveal";
 import { motion } from "framer-motion";
 import { Activity, Cpu, Gauge } from "lucide-react";
+import { memo } from "react";
 
-export function Analytics() {
+export const Analytics = memo(() => {
   return (
-    <section id="analytics" className="relative overflow-hidden py-32">
+    <section id="analytics" className="relative overflow-hidden py-32" style={{ contentVisibility: 'auto', containIntrinsicSize: '0 600px' }}>
       <div
         className="absolute inset-0"
         style={{
@@ -50,7 +51,9 @@ export function Analytics() {
       </div>
     </section>
   );
-}
+});
+
+Analytics.displayName = "Analytics";
 
 function DashboardMockup() {
   return (
