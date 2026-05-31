@@ -183,9 +183,14 @@ export function WebDev() {
                   Não entregamos apenas sites. Construímos ecossistemas digitais preparados para escalar.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <button className="px-8 py-4 rounded-full bg-gradient-to-r from-scalax-blue to-scalax-neon text-white font-bold hover:scale-105 transition-transform shadow-lg shadow-scalax-blue/25">
+                  <a 
+                    href="https://wa.me/5585989324688"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-4 rounded-full bg-gradient-to-r from-scalax-blue to-scalax-neon text-white font-bold hover:scale-105 transition-transform shadow-lg shadow-scalax-blue/25"
+                  >
                     Falar com Especialista
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

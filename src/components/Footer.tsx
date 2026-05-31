@@ -1,5 +1,5 @@
-import { ScalaxBird } from "./ScalaxBird";
 import { MessageCircle, Instagram, Linkedin, Mail } from "lucide-react";
+import { ScalaxBird } from "./ScalaxBird";
 
 export function Footer() {
   return (
@@ -30,7 +30,7 @@ export function Footer() {
               de campanhas. Tecnologia premium para crescimento previsível.
             </p>
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5585989324688"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
@@ -61,7 +61,7 @@ export function Footer() {
             <h4 className="text-xs uppercase tracking-widest text-scalax-neon">
               Contato
             </h4>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 space-y-4 text-sm">
               <li>
                 <a
                   href="mailto:contato@scalax.com.br"
@@ -70,14 +70,43 @@ export function Footer() {
                   <Mail className="h-3.5 w-3.5" /> contato@scalax.com.br
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://wa.me/5585989324688"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <MessageCircle className="h-3.5 w-3.5 text-scalax-neon" /> (85) 98932-4688
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/scalax_ads/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <Instagram className="h-3.5 w-3.5 text-scalax-neon" /> @scalax_ads
+                </a>
+              </li>
               <li className="flex items-center gap-4 pt-2">
-                <a href="#" className="text-muted-foreground transition-colors hover:text-scalax-neon" aria-label="Instagram">
+                <a 
+                  href="https://www.instagram.com/scalax_ads/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground transition-colors hover:text-scalax-neon" 
+                  aria-label="Instagram"
+                >
                   <Instagram className="h-4 w-4" />
                 </a>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-scalax-neon" aria-label="LinkedIn">
-                  <Linkedin className="h-4 w-4" />
-                </a>
-                <a href="https://wa.me/5500000000000" className="text-muted-foreground transition-colors hover:text-scalax-neon" aria-label="WhatsApp">
+                <a 
+                  href="https://wa.me/5585989324688" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground transition-colors hover:text-scalax-neon" 
+                  aria-label="WhatsApp"
+                >
                   <MessageCircle className="h-4 w-4" />
                 </a>
               </li>

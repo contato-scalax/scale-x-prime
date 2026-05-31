@@ -12,6 +12,7 @@ import { Cases } from "@/components/sections/Cases";
 import { Analytics } from "@/components/sections/Analytics";
 import { LeadHunter } from "@/components/sections/LeadHunter";
 import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,6 +53,7 @@ function Index() {
         <LeadHunter />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </>
   );
 }

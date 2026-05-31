@@ -205,3 +205,5 @@
 
 .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
 .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+
+#lovable-badge { display: none !important; }
