@@ -25,7 +25,7 @@ export function FloatingWhatsApp() {
             damping: 20,
             delay: 2 + i * 0.15,
           }}
-          className="relative flex h-14 w-14 items-center justify-center rounded-full text-white shadow-2xl transition-shadow hover:shadow-scalax-neon/40"
+          className="group relative flex h-14 items-center gap-2 rounded-full pl-4 pr-5 text-white shadow-2xl transition-shadow hover:shadow-scalax-neon/40"
           style={{
             background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
             boxShadow: "0 4px 20px rgba(37, 211, 102, 0.4)",
@@ -35,7 +35,8 @@ export function FloatingWhatsApp() {
           {i === 0 && (
             <div className="absolute inset-0 rounded-full bg-white/20 animate-ping opacity-20" />
           )}
-          <MessageCircle className="h-7 w-7" />
+          <MessageCircle className="h-6 w-6 shrink-0" />
+          <span className="text-sm font-semibold">{b.name}</span>
         </motion.a>
       ))}
     </div>
