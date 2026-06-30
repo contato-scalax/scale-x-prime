@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const buttons = [
-  { href: "https://wa.me/5585989324688", label: "Falar no WhatsApp (85)" },
-  { href: "https://wa.me/5527999629889", label: "Falar no WhatsApp (27)" },
+  { href: "https://wa.me/5585989324688", label: "Falar com Jefferson", name: "Jefferson" },
+  { href: "https://wa.me/5527999629889", label: "Falar com Willian", name: "Willian" },
 ];
 
 export function FloatingWhatsApp() {
