@@ -5,6 +5,8 @@ import { Reveal } from "../Reveal";
 import lelumaImg from "@/assets/project-leluma.jpeg";
 import vipImg from "@/assets/project-vipagenda.jpeg";
 import stImg from "@/assets/project-st-importados.jpeg";
+import elementosImg from "@/assets/project-elementos4.jpeg";
+import importbrinkImg from "@/assets/project-importbrink.jpeg";
 
 type Project = {
   name: string;
@@ -31,6 +33,18 @@ const projects: Project[] = [
     description: "Catálogo Digital para Atacado e Varejo",
     url: "https://melodic-platypus-f93f0f.netlify.app/",
     image: stImg,
+  },
+  {
+    name: "Elementos 4 Empório",
+    description: "Vinhos, Sabores e Experiências Únicas",
+    url: "https://elementos4emporio.lovable.app/#wines",
+    image: elementosImg,
+  },
+  {
+    name: "Import Brink",
+    description: "Locação de Brinquedos Infláveis para Eventos",
+    url: "https://importbrink.lovable.app/",
+    image: importbrinkImg,
   },
 ];
 
