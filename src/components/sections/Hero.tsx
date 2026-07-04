@@ -71,7 +71,9 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#contato"
+              href="https://my-formulariosite.base44.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-full border border-scalax-neon/30 bg-scalax-deep/40 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:border-scalax-neon hover:bg-scalax-deep/70"
             >
               Solicitar Diagnóstico
