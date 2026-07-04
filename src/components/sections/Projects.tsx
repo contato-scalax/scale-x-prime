@@ -34,6 +34,18 @@ const projects: Project[] = [
     url: "https://melodic-platypus-f93f0f.netlify.app/",
     image: stImg,
   },
+  {
+    name: "Elementos 4 Empório",
+    description: "Vinhos, Sabores e Experiências Únicas",
+    url: "https://elementos4emporio.lovable.app/#wines",
+    image: elementosImg,
+  },
+  {
+    name: "Import Brink",
+    description: "Locação de Brinquedos Infláveis para Eventos",
+    url: "https://importbrink.lovable.app/",
+    image: importbrinkImg,
+  },
 ];
 
 export const Projects = memo(() => {
