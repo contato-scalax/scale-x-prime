@@ -143,7 +143,7 @@ export const WebDev = memo(() => {
         </div>
 
         {/* Differentiators Section */}
-        <div className="mb-20">
+        <div id="diferenciais" className="mb-20 scroll-mt-24">
           <Reveal>
             <h3 className="text-2xl font-bold mb-12 flex items-center gap-3">
               <span className="h-px w-12 bg-scalax-neon/50" />
