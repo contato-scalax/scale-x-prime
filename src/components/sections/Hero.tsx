@@ -52,8 +52,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground"
           >
-            Transformamos investimentos em crescimento previsível através de
-            tráfego pago, automação e inteligência de campanhas.
+            Sites e sistemas desenvolvidos para fortalecer sua presença
+            digital.
           </motion.p>
 
           <motion.div
