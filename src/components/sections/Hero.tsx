@@ -32,7 +32,7 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-scalax-neon/30 bg-scalax-deep/50 px-4 py-1.5 text-xs uppercase tracking-widest text-scalax-neon backdrop-blur"
           >
             <Sparkles className="h-3 w-3" />
-            Performance · Dados · Escala
+            Sites · Apps · Sistemas · Tráfego Pago
           </motion.div>
 
           <motion.h1
