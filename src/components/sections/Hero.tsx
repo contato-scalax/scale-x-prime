@@ -41,9 +41,8 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="text-balance text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl"
           >
-            Escalamos{" "}
-            <span className="text-gradient">negócios</span> através de{" "}
-            <span className="text-neon">dados</span> e performance.
+            Soluções <span className="text-gradient">digitais</span> para empresas que querem{" "}
+            <span className="text-neon">evoluir</span>!
           </motion.h1>
 
           <motion.p
