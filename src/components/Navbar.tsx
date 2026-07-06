@@ -57,8 +57,14 @@ export function Navbar() {
             href="https://wa.me/5527999629889"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-scalax-neon/30 bg-scalax-deep/50 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-scalax-neon backdrop-blur transition-colors hover:bg-scalax-deep/80"
+            aria-label="Falar com Willian"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white shadow-lg transition-transform hover:scale-[1.03]"
+            style={{
+              background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
+              boxShadow: "0 4px 20px rgba(37, 211, 102, 0.4)",
+            }}
           >
+            <MessageCircle className="h-4 w-4" />
             Willian
           </a>
         </nav>
