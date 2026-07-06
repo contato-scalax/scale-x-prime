@@ -1,13 +1,47 @@
-import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUp, MessageCircle } from "lucide-react";
 
 const buttons = [
   { href: "https://wa.me/5585989324688", label: "Falar com Jefferson", name: "Jefferson" },
 ];
 
 export function FloatingWhatsApp() {
+  const [showTop, setShowTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 300);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-5">
+      <AnimatePresence>
+        {showTop && (
+          <motion.button
+            key="back-to-top"
+            type="button"
+            onClick={scrollToTop}
+            aria-label="Voltar ao topo"
+            initial={{ opacity: 0, y: 12, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 12, scale: 0.9 }}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.92 }}
+            transition={{ type: "spring", stiffness: 260, damping: 22 }}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-scalax-neon/30 bg-scalax-deep/70 text-scalax-neon backdrop-blur-xl transition-colors hover:border-scalax-neon hover:bg-scalax-deep/90"
+            style={{ boxShadow: "0 8px 30px rgba(0, 0, 0, 0.35)" }}
+          >
+            <ArrowUp className="h-5 w-5" />
+          </motion.button>
+        )}
+      </AnimatePresence>
+
       {buttons.map((b, i) => (
         <motion.a
           key={b.href}
