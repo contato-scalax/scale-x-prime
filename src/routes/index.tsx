@@ -48,8 +48,8 @@ function Index() {
       <main className="relative">
         <Hero />
         <Suspense fallback={<div className="h-96 w-full animate-pulse bg-scalax-deep/20" />}>
-          <Results />
           <Projects />
+          <Results />
           <WebDev />
           <PaidTraffic />
           <Process />
