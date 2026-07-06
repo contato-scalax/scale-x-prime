@@ -53,10 +53,12 @@ export function Navbar() {
           </div>
 
           <a
-            href="#contato"
+            href="https://wa.me/5527999629889"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full border border-scalax-neon/30 bg-scalax-deep/50 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-scalax-neon backdrop-blur transition-colors hover:bg-scalax-deep/80"
           >
-            Diagnóstico
+            Willian
           </a>
         </nav>
       </motion.header>
