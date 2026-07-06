@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { ScalaxBird } from "./ScalaxBird";
+import { MessageCircle } from "lucide-react";
 
 const links = [
   { label: "Resultados", href: "#resultados" },
